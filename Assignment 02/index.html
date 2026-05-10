@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loomē</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid px-5 py-4">
+
+        <!-- HEADER -->
+        <header class="d-flex justify-content-between align-items-center mb-5">
+
+            <div class="logo">
+                <h1>loomé.</h1>
+            </div>
+
+            <nav class="nav-links d-flex align-items-center gap-4">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link active" href="#">Shop</a>
+                <a class="nav-link" href="#">Collection</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+
+            <div class="nav-icons d-flex align-items-center gap-3">
+
+                <button class="btn cart-btn position-relative p-0">
+                    <img class="icon" src="./icons/shopping-bag.png" alt="cart icon">
+                    <span class="item-count position-absolute">2</span>
+                </button>
+
+                <button class="btn menu-btn p-0">
+                    <img class="icon" src="./icons/burger-menu.svg" alt="menu icon">
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- MAIN -->
+        <main class="main-layout">
+
+            <!-- LEFT -->
+            <aside class="product-info">
+
+                <div class="collection-tag d-flex align-items-center gap-3 mb-4">
+                    <img class="new-col-icon" src="./icons/collection.png" alt=" title icon">
+                    <span>NEW COLLECTION</span>
+                </div>
+
+                <h2 class="hero-title">
+                    a cotton <br>
+                    weave
+                </h2>
+
+                <div class="mini-line"></div>
+
+                <p class="product-tagline">
+                    Crafted from 100% organic cotton with a soft,
+                    breathable feel. Perfect for all seasons and
+                    everyday elegance.
+                </p>
+
+                <!-- COLORS -->
+                <div class="d-flex align-items-center gap-3 mb-5">
+                    <p class="section-title m-0">colors</p>
+
+                    <div class="color color-green"></div>
+                    <div class="color color-skin"></div>
+                    <div class="color color-pink"></div>
+                </div>
+
+                <!-- DETAILS -->
+                <div class="details mb-5">
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <h5 class="m-0">Details</h5>
+                        <span>—</span>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Accusamus, sapiente. Ipsam maiores nemo, quidem veniam
+                        et atque suscipit.
+                    </p>
+
+                </div>
+
+                <!-- FEATURES -->
+                <div class="features-bar">
+
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <img src="./icons/leaf.png" alt="leaf-icon">
+                        </div>
+                        <p>Organic <br> Cotton</p>
+                    </div>
+
+                    <div class="vr"></div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <img src="./icons/leaf.png" alt="leaf-icon">
+                        </div>
+                        <p>Soft & <br> Lightweight</p>
+                    </div>
+
+                    <div class="vr"></div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon-box">
+                            <img src="./icons/grid.png" alt="grid-icon">
+                        </div>
+                        <p>Handmade <br> Weave</p>
+                    </div>
+
+                </div>
+
+            </aside>
+
+            <!-- CENTER -->
+            <section class="hero-section position-relative">
+
+                <!-- PRICE -->
+                <div class="price-tag">
+                    <h5>$488</h5>
+                </div>
+
+                <!-- RATING -->
+                <div class="rating-tag">
+                    <span>Rating ★★★★★</span>
+                </div>
+
+                <!-- VERTICAL TEXT -->
+                <div class="vertical-text" style="font-family: var(--font-display); font-weight: 500;">
+                    cotton twill scarf
+                </div>
+
+                <!-- MAIN IMAGE -->
+                <img class="hero-image" src="./images/product.jpg" alt="">
+
+                <!-- ADD TO BAG -->
+                <div class="add-bag-btn">
+                    <img class="w-25" src="./icons/shopping-bag-white.png" alt="shopping bag">
+                    <p>Add to bag</p>
+                </div>
+
+                <!-- BOTTOM INFO BAR -->
+                <div class="bottom-bar shadow">
+
+                    <div class="bottom-item">
+                        <img class="w-20" src="./icons/secure.png" alt="secure">
+                        <span>Secure Payment</span>
+                    </div>
+
+                    <div class="bottom-item">
+                        <img class="w-20" src="./icons/shipping.png" alt="">
+                        <span>Free Shipping Over $100</span>
+                    </div>
+
+                    <div class="bottom-item">
+                        <img class="w-20" src="./icons/return.png" alt="">
+                        <span>Easy Returns 30 Days</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- RIGHT -->
+            <aside class="gallery-sidebar">
+
+                <div class="thumb active-thumb">
+                    <img src="./images/product.jpg" alt="">
+                </div>
+
+                <div class="thumb">
+                    <img src="./images/img-2.jpg" alt="">
+                </div>
+
+                <div class="thumb">
+                    <img src="./images/img-3.jpg" alt="">
+                </div>
+
+                <div class="thumb">
+                    <img src="./images/img-4.jpg" alt="">
+                </div>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
