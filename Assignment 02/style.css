@@ -362,6 +362,12 @@ h5 {
     border: 3px solid var(--green);
 }
 
+hr{
+    border: 1px solid #000000 !important;
+    height: 80px;
+    transform: rotate(-90deg) translateY(-50%);
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1200px) {
