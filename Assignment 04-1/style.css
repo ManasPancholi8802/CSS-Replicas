@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Horizon';
-    src: url('./font/Horizon-nMeM.ttf') format('truetype');
+    font-family: 'Electro Harmonix';
+    src: url('./font/Electroharmonix.otf') format('truetype');
 }
 
 :root {
@@ -10,7 +10,7 @@
     --dark2: #231829;
     --light: #f0e8d8;
     --muted: #b0a0ba;
-    --font-horizon: 'Horizon', sans-serif;
+    --font-Electro: 'Electro Harmonix', sans-serif;
 }
 
 *,
@@ -142,7 +142,7 @@ body {
 
 .hero-eyebrow {
     position: relative;
-    left: 8%;
+    left: 1.5%;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
@@ -153,8 +153,8 @@ body {
 }
 
 .hero-title {
-    font-family: var(--font-horizon);
-    font-weight: 900;
+    font-family: var(--font-Electro);
+    font-weight: 500;
     font-size: 10rem;
     line-height: 1;
     letter-spacing: .01em;
@@ -163,7 +163,7 @@ body {
     white-space: nowrap;
     width: 100vw;
     position: relative;
-    left: 49%;
+    left: 48%;
     transform: translateX(-50%);
     text-align: center;
     display: flex;
@@ -173,7 +173,7 @@ body {
 
 .hero-subtitle {
     position: relative;
-    left: 57%;
+    left: 64%;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
@@ -230,9 +230,9 @@ body {
 }
 
 .vision-title {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-family: var(--font-Electro);
+    font-weight: 500;
+    font-size: 3rem;
     letter-spacing: .3em;
     text-transform: uppercase;
     text-align: center;
