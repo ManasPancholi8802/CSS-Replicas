@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --font-league: 'League Gothic', sans-serif;
+}
+
 body {
     background: #000;
     padding: 25px;
@@ -159,7 +163,7 @@ body {
     padding: 30px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     background: linear-gradient(90deg, #c056ff, #7c3aed);
@@ -175,8 +179,8 @@ body {
 }
 
 .poster-title {
-    font-size: 90px;
-    font-weight: 900;
+    font-family: var(--font-league);
+    font-size: 8rem;
     line-height: 0.9;
 }
 
@@ -202,8 +206,10 @@ body {
 
 .barcode {
     height: 90px;
-    background: white;
+    background: transparent;
     border-radius: 10px;
+    margin: auto;
+    width: 100%;
 }
 
 .info-content {
@@ -255,11 +261,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .qr-box {
-    width: 85px;
-    height: 85px;
+    width: 100px;
+    height: 100px;
     background: transparent;
 }
 
@@ -279,7 +286,7 @@ body {
 
 .review-title {
     font-size: 60px;
-    font-weight: 900;
+    font-weight: 500;
     line-height: 1;
 }
 
@@ -292,15 +299,21 @@ body {
 
 .rating {
     font-size: 120px;
-    font-weight: 900;
+    font-weight: 500;
     line-height: 1;
+}
+.rating-star {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
 }
 
 .btn-purple {
     background: #9b5cff;
     color: white;
     border: none;
-    padding: 18px 35px;
+    margin-top: 1rem;
+    padding: 18px 30px;
     border-radius: 18px;
     font-size: 22px;
 }
