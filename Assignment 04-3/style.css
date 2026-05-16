@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #060816;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.main-grid {
+    display: grid;
+
+    /* 4 Columns */
+    grid-template-columns: 1fr 1fr 1fr 0.9fr;
+
+    /* 4 Rows */
+    grid-template-rows: 280px 210px 180px;
+
+    gap: 18px;
+}
+
+.card-box {
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* COLORS */
+
+.white-card {
+    background: #f4f4f4;
+}
+
+.yellow-card {
+    background-image: url('./images/card bg.png');
+    background-size:cover;
+}
+
+.pink-card {
+    background: #efc1b9;
+}
+
+.cream-card {
+    background: #f6f1df;
+}
+
+.dark-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .25);
+}
+
+/* GRID POSITIONING */
+
+.hero-card {
+    position: relative;
+    background-color: #b39ba1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.hero-badge-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fad703;
+}
+
+.app-card {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.font-card {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.quote-card {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+
+.small-text-card {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.logo-card {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
+
+.phone-card {
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+}
+
+.visit-card {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.trainer-card {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.girl-card {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+/* COMMON IMAGE */
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HERO */
+
+.hero-badges {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    right: 18px;
+
+    display: flex;
+    gap: 12px;
+}
+
+.badge-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    background: rgba(0, 0, 0, .55);
+    color: white;
+
+    border-radius: 18px;
+    padding: 12px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+/* APP CARD */
+
+.store-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.store-btn {
+    background: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+/* FONT CARD */
+
+.color-bar {
+    width: 100%;
+    height: 14px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 30px;
+}
+
+.color-bar div {
+    flex: 1;
+}
+
+/* QUOTE */
+
+.address-box {
+    background: #efc1b9;
+    border-radius: 24px;
+    padding: 22px;
+    margin-top: 35px;
+}
+
+.address-location-icon{
+    width: 68px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* LOGO */
+
+.logo-center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-title {
+    font-size: 7rem;
+    font-weight: 800;
+}
+
+.logo-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+}
+
+/* VISIT */
+
+.visit-btn {
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    width: 50%;
+
+    background: rgba(0, 0, 0, .55);
+    color: white;
+
+    padding: 20px 28px;
+    border-radius: 22px;
+    font-size: 1.5rem;
+    backdrop-filter: blur(5px);
+}
+
+/* TRAINERS */
+
+.trainer-avatars {
+    display: flex;
+    margin-top: 20px;
+}
+
+.trainer-avatars img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0.5px solid white;
+    object-fit: cover;
+    margin-left: -10px;
+}
+
+.trainer-avatars img:first-child {
+    margin-left: 0;
+}
+
+/* PHONE */
+
+.phone-mockup {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80%;
+    height: 82%;
+
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
+}
+
+.phone-mockup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
