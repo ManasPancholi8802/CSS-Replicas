@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insect</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="position-absolute top-0 end-0 start-0 d-flex justify-content-between align-items-center p-5"
+        style="z-index: 100;">
+        <div class="left-grp d-flex align-items-center gap-cstm w-50 justify-content-around">
+            <h3 class="fw-bold text-uppercase m-0">insect</h3>
+            <div class="search-wrapper me-auto ms-3">
+                <i class="bi bi-search text-muted"><img class="nav-icon" src="./icons/search.png" alt=""></i>
+                <input type="text" placeholder="   Search..." />
+            </div>
+        </div>
+        <div class="right-grp nav-links d-flex w-50 justify-content-around">
+            <ul class="list-unstyled d-flex gap-cstm">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">Shop</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Gallery</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="d-flex min-vh-100">
+        <!-- Left Panel -->
+        <div class="left-panel d-flex align-items-center position-relative">
+            <div class="classification-label position-absolute top-50">
+                <h1 class="fst-italic fw-semibold"
+                    style="font-family: var(--font-garamond); font-size: 6rem !important;">Classification</h1>
+            </div>
+            <div class="classification-list d-flex flex-column mt-5">
+                <ul class="cstm-list">
+                    <li>
+                        <span class="bullet"></span>
+                        <div>
+                            <span class="label">Class:</span>
+                            <span class="value">Insecta</span>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="bullet"></span>
+                        <div>
+                            <span class="label">Order:</span>
+                            <span class="value">Coleoptera</span>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="bullet"></span>
+                        <div>
+                            <span class="label">Family:</span>
+                            <span class="value">Cerambycidae</span>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="bullet"></span>
+                        <div>
+                            <span class="label">Sub-Family:</span>
+                            <span class="value">Cerambycinae</span>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="bullet"></span>
+                        <div>
+                            <span class="label">Tribe:</span>
+                            <span class="value">Callicromatini</span>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="bullet"></span>
+                        <div>
+                            <span class="label">Genus:</span>
+                            <span class="value">Pachyteria</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Center -->
+        <div class="dome-image-wrapper position-absolute" style="left: 40%; top: 15%;">
+            <img style="width: 390px;" src="./images/Insect1.png" alt="">
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel d-flex align-items-center justify-content-center">
+            <div class="content-wrapper ms-5 mt-5" style="max-width: 420px;">
+                <h1 style="color: var(--bg-color1); font-size: 4.75rem; line-height: 5rem;">Pachyteria equestris</h1>
+
+                <div class="spec-row d-flex align-items-center position-relative" style="right: 15%;">
+                    <div class="image d-flex flex-column align-items-center mt-4">
+                        <img style="width: 40%;" src="./icons/insect.png" alt="Beetle icon">
+                        <p class="text-light fs-5 mt-3">32 mm</p>
+                    </div>
+                    <div class="divider-v"></div>
+                    <div class="specs-grid d-flex flex-column ms-5 mt-4">
+                        <div class="spec-item d-flex align-items-center gap-3">
+                            <img src="./icons/location.png" alt="Location">
+                            <div class="text-group text-light">
+                                <h6>Locality:</h6>
+                                <span>Malaysia</span>
+                            </div>
+                        </div>
+                        <div class="spec-item d-flex align-items-center gap-3">
+                            <img src="./icons/Sex.png" alt="Location">
+                            <div class="text-group text-light">
+                                <h6>Sex:</h6>
+                                <span>Male</span>
+                            </div>
+                        </div>
+                        <div class="spec-item d-flex align-items-center gap-3">
+                            <img src="./icons/ruler.png" alt="Location">
+                            <div class="text-group text-nowrap text-light">
+                                <h6>Size:</h6>
+                                <span>32mm / 12mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="fw-semibold mt-4" style="font-family: var(--font-dm); font-size: 2.75rem; color: #e1c298;">$5.99</h1>
+
+                <div class="toggle-grp d-flex flex-column">
+                    <div class="toggle-item d-flex align-items-center">
+                        <div class="form-check form-switch mb-3 d-flex align-items-center gap-3">
+                            <input class="form-check-input custom-switch" type="checkbox" id="switch1">
+                            <label class="form-check-label text-white" for="switch1">
+                                View detailed antennae
+                            </label>
+                        </div>
+                    </div>
+                    <div class="toggle-item d-flex align-items-center">
+                        <div class="form-check form-switch d-flex align-items-center gap-3">
+                            <input class="form-check-input custom-switch" type="checkbox" id="switch2">
+                            <label class="form-check-label text-white" for="switch2">
+                                View underside
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="collection-btn btn rounded-2 text-muted fs-5 py-2 mt-5" type="button">Add to collection</button>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

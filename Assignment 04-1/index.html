@@ -4,94 +4,116 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shinsei Village</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Raleway:wght@300;400;600&display=swap"
+    <title>Jon Daniel — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header class="site-nav">
-        <a href="#" class="nav-logo">
-            <img src="./images/Logo.png" alt="Shinsei Village" />
-        </a>
+    <div class="page">
 
-        <ul class="nav-links">
-            <li><a href="#vision" class="active">Vision</a></li>
-            <li><a href="#collection">Collection</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#mint">Mint ↗</a></li>
-            <li><a href="#">Wallet Checker ↗</a></li>
-        </ul>
+        <!-- Sidebar nav -->
+        <nav class="sidenav">
+            <a class="sidenav-link active" href="#">Clients</a>
+            <a class="sidenav-link" href="#">Research</a>
+            <a class="sidenav-link" href="#">Portfolio</a>
+            <a class="sidenav-link" href="#">Podcast</a>
+        </nav>
 
-        <div class="nav-socials">
-            <a href="#" aria-label="Instagram"><img src="./icons/instagram.png" alt="Instagram" /></a>
-            <a href="#" aria-label="Telegram" style="border: 1px solid white; width: 40px; height: 40px;"><img src="./icons/plane.png" style="width: 45px;" alt="Telegram" /></a>
-            <a href="#" aria-label="Discord"><img src="./icons/Discord.png" alt="Discord" /></a>
-        </div>
-    </header>
+        <!-- Main -->
+        <div class="main">
 
+            <!-- Grid -->
+            <div class="grid">
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-bg"></div><!-- Image via CSS -->
+                <!-- HERO CARD -->
+                <div class="card hero-card">
+                    <div class="hero-about">
+                        <img style="width: 30px; transform: skew(20deg);" src="./icons/Shine.png" alt="">
+                        <p style="transform: skew(20deg);">About Me</p>
+                    </div>
 
-        <div class="hero-text">
-            <div class="hero-text-inner">
-                <p class="hero-eyebrow">Join the Mystic Adventure</p>
-            </div>
-            <h1 class="hero-title"><span>SHINSEI</span><span>VILLAGE</span></h1>
-            <div class="hero-text-inner">
-                <p class="hero-subtitle">Genuine Storytelling Project</p>
-            </div>
-        </div>
-        
-        <div class="hero-char">
-            <a href="#mint" style="position: absolute; left: 44%; top: 65%; z-index: 5; font-size: larger;" class="btn-mint">Mint Now</a>
-            <img class="hero-character" src="./images/Monkey.png" alt="Shinsei Village Character" /><!-- insert character PNG src -->
-        </div>
+                    <div class="hero-photo-wrap d-flex">
+                        <div class="hero-photo-wrap-inner">
+                            <img class="hero-img" src="./images/Logo.png" alt="Jon Daniel" />
+                        </div>
+                    </div>
 
+                    <div class="hero-name">
+                        <span style="font-weight: 100;">Im,</span>
+                        <span>Jon</span>
+                        <span>Daniel</span>
+                    </div>
 
-    </section>
+                    <div class="hero-badge">
+                        <img src="./images/Circle img.png" alt="2022 Design Portfolio badge" />
+                    </div>
 
-
-    <!-- VISION -->
-    <section class="vision" id="vision">
-        <div class="container">
-            <h2 class="vision-title">Vision</h2>
-            <div class="gold-rule">
-                <div class="gold-rule-line"></div>
-                <img class="gold-rule-diamond" src="./icons/footer-center-icon.png" alt="">
-                <div class="gold-rule-line"></div>
-            </div>
-            <div class="row g-5">
-                <div class="col-md-6">
-                    <p class="vision-body">
-                        <strong>Shinsei Village</strong> is a collection featuring 1,200 demigod monkeys,
-                        unraveling a mysterious case to save their village. The project is not just a PFP
-                        collection, but a fascinating on-chain storyline. Through a focus on community
-                        engagement, the project seeks to build the <strong>new era of Web3 entertainment</strong>.
-                    </p>
+                    <a class="hero-email" href="mailto:inquiry@jondaniel.design">
+                        inquiry@jondaniel.design
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m2 7 10 7 10-7" />
+                        </svg>
+                    </a>
+                    <hr class="dotted-line">
                 </div>
-                <div class="col-md-6">
-                    <p class="vision-body">
-                        Each stage of development is aimed to deliver the adventure experience to the community,
-                        as well as provides rewards and benefits for all holders. Solve weekly puzzles to open
-                        mystic boxes and collect <strong>$CLUE</strong>! Uncovering the plot is entirely up to
-                        the vote and decisions of the community.
-                    </p>
+
+                <!-- Top bar -->
+                <div class="title-card">
+                    <h1 class="portfolio-title">Portfolio</h1>
                 </div>
-            </div>
-        </div>
-    </section>
 
+                <!-- VIDEO CARD -->
+                <div class="card video-card">
+                    <img src="./images/flamingo.jpg" alt="Featured project thumbnail" />
+                    <button class="play-btn" aria-label="Play video">
+                        <svg viewBox="0 0 24 24">
+                            <polygon points="5,3 19,12 5,21" />
+                        </svg>
+                    </button>
+                </div>
 
+                <!-- STATS COLUMN -->
+                <div class="stats-col">
+                    <div class="stat-card projects">
+                        <div class="stat-number">251</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card awards">
+                        <div class="stat-number" style="color: #fff;">156</div>
+                        <div class="stat-label" style="color: #fff;">Awards</div>
+                    </div>
+                </div>
+
+                <!-- BOTTOM ROW -->
+                <div class="bottom-row">
+
+                    <!-- Clients / Apple card -->
+                    <div class="clients-card">
+                        <img src="./icons/Apple.png" alt="">
+                        <span class="clients-label">Clients</span>
+                    </div>
+
+                    <div class="globe-card">
+                        <img src="./images/Orb.png" alt="Decorative orb" />
+                    </div>
+
+                    <!-- 172 Award card -->
+                    <div class="award-card">
+                        <div class="award-number">172</div>
+                        <div class="award-label">Global Design<br>Awards.</div>
+                    </div>
+
+                </div><!-- /bottom-row -->
+
+            </div><!-- /grid -->
+        </div><!-- /main -->
+    </div><!-- /page -->
 
 </body>
 

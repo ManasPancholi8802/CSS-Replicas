@@ -1,0 +1,363 @@
+:root {
+    --bg-dark: #0d0d0d;
+    --bg-card: #141414;
+    --bg-card-hover: #1a1a1a;
+    --accent: #c8651a;
+    --accent-light: #e07a30;
+    --accent-glow: rgba(200, 101, 26, 0.25);
+    --text-white: #f5f0eb;
+    --text-muted: #9a9080;
+    --border-subtle: rgba(200, 101, 26, 0.15);
+    --border-active: rgba(200, 101, 26, 0.6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+}
+
+/*  HEADER  */
+.site-header {
+    text-align: center;
+    padding: 52px 0 28px;
+}
+
+.site-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--text-white);
+    margin-bottom: 14px;
+}
+
+.header-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-ornament .line {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent));
+}
+
+.header-ornament .line.right {
+    background: linear-gradient(to left, transparent, var(--accent));
+}
+
+.ornament-icon {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+/*  DRINKS SECTION  */
+.drinks-section {
+    padding: 24px 0 40px;
+}
+
+/*  DRINK CARD  */
+.drink-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 18px;
+    padding: 26px 20px 28px;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    height: 100%;
+    position: relative;
+}
+
+.drink-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-active);
+    box-shadow: 0 0 28px var(--accent-glow);
+}
+
+.drink-card.featured {
+    border-color: var(--border-active);
+    box-shadow: 0 0 32px var(--accent-glow);
+}
+
+/* badge */
+.drink-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(200, 101, 26, 0.15);
+    border: 1px solid var(--border-active);
+    border-radius: 50px;
+    padding: 4px 12px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--accent-light);
+    text-transform: capitalize;
+}
+
+.drink-badge .badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    flex-shrink: 0;
+}
+
+.drink-badge .badge-star {
+    font-size: 0.7rem;
+}
+
+/* image area */
+.drink-img-wrap {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.drink-img-wrap img {
+    max-height: 210px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* placeholder (no image source) */
+.drink-img-wrap img[src=""] {
+    display: block;
+    width: 90px;
+    height: 200px;
+    background: rgba(200, 101, 26, 0.08);
+    border-radius: 8px;
+}
+
+.drink-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 4px;
+}
+
+.drink-desc {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+}
+
+.drink-divider {
+    width: 36px;
+    height: 1px;
+    background: var(--accent);
+    margin: 0 auto 14px;
+    opacity: 0.5;
+}
+
+.drink-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-light);
+}
+
+/*  CHEF'S SPECIAL RIBBON  */
+.chefs-special {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    min-height: 280px;
+}
+
+.chefs-img-wrap {
+    flex: 0 0 280px;
+    max-width: 280px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chefs-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* placeholder */
+.chefs-img-wrap img[src=""] {
+    background: rgba(200, 101, 26, 0.07);
+    display: block;
+}
+
+.chefs-content {
+    flex: 1;
+    padding: 40px 48px 40px 40px;
+    position: relative;
+}
+
+.chefs-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.chefs-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.chefs-tagline {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+}
+
+.chefs-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    max-width: 480px;
+    margin-bottom: 32px;
+}
+
+.btn-explore {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--accent);
+    border-radius: 50px;
+    padding: 11px 28px;
+    color: var(--text-white);
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    background: transparent;
+    text-decoration: none;
+    transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-explore:hover {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 18px var(--accent-glow);
+}
+
+.btn-explore .arrow {
+    font-size: 1rem;
+}
+
+/* leaf icon on chef section */
+.chefs-leaf {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 120px;
+    opacity: 0.13;
+    pointer-events: none;
+}
+
+/*  FOOTER  */
+.site-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 22px 0;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.site-footer .line {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent));
+}
+
+.footer-nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: var(--text-white);
+}
+
+.footer-sep {
+    color: var(--accent);
+    margin: 0 8px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-icon {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.social-icon:hover {
+    border-color: var(--accent);
+    background: var(--accent-glow);
+}
+
+.social-icon img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .chefs-special {
+        flex-direction: column;
+    }
+
+    .chefs-img-wrap {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+        height: 200px;
+    }
+
+    .chefs-content {
+        padding: 28px 24px;
+    }
+
+    .footer-nav {
+        margin: 10px 0;
+    }
+}

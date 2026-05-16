@@ -1,0 +1,208 @@
+:root {
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --page-bg: linear-gradient(to bottom, #ee8d43, #ba520a);
+    --card-bg: #fbf3ec;
+    --primary-color: #e85e02;
+    --secondary-color: #494745;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--page-bg);
+}
+
+.page-body {
+    background-color: var(--card-bg);
+}
+
+h1,
+h2, h3, small {
+    font-family: var(--font-body);
+}
+
+/* .navbar{
+    margin-top: rem !important;
+} */
+
+.nav-left * {
+    font-weight: 650;
+    margin-bottom: 0 !important;
+}
+
+.gap-100 {
+    gap: 100px;
+}
+
+.gap-90 {
+    gap: 90px;
+}
+
+.nav-pages {
+    font-family: var(--font-body);
+
+    .text-nav {
+        color: #41403c !important;
+    }
+}
+
+.navicons {
+    width: 30px;
+}
+
+hr {
+    border: 1px solid gray;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.badge-title h1 {
+    font-size: 4rem !important;
+}
+
+p {
+    font-family: var(--font-body);
+}
+
+a {
+    font-family: var(--font-body);
+    text-decoration: none;
+}
+
+.accordion,
+.accordion-item,
+.accordion-button {
+    border: none !important;
+    /* remove accordion's border  */
+}
+
+.accordion-button {
+    font-family: var(--font-body) !important;
+    font-weight: bold;
+    font-size: 1.25rem !important;
+}
+.accordion-button:hover {
+    background-color: transparent;
+}
+
+.accordion-button-cstm::after {
+    display: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    /* Removes the blue thin line from bootstrap when opening or closing the accordion*/
+}
+
+/* Change the bg-color of accordion */
+.accordion {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-active-bg: transparent;
+    --bs-accordion-btn-bg: transparent;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-active-color: inherit;
+}
+
+.accordion-button,
+.accordion-body {
+    padding-left: 0;
+    font-family: var(--font-body) !important;
+}
+
+.product-image {
+    filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.45));
+    width: 120%; /* wider than column */
+    max-width: none; /* override Bootstrap img-fluid */
+    margin-left: -10%; /* center the overflow */
+    height: 850px; /* tall fixed height */
+    object-fit: contain;
+    object-position: top; /* show head, not middle */
+    margin-top: -40px; /* bleed upward */
+    overflow: visible;
+}
+
+.product-image-var{
+    filter: drop-shadow(0px 30px 60px rgba(0, 0, 0, 0.5));
+    width: 100px;
+}
+
+.product-feature-icon {
+    width: 35px;
+}
+
+.gap-6{
+    gap: 4rem;
+}
+
+.btn-cstm{
+    background-color: #f5ede5;
+    width: 3rem !important;
+    height: 3rem !important;
+    font-size: larger;
+    border-radius: 30%;
+}
+.btn-cstm:focus{
+    background-color: #e85e02;
+    color: white;
+}
+
+.variant-btn{
+    background-color: #f3ede9;
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    
+}
+
+.variant-btn:hover{
+    background-color: #f3ede9;
+}
+
+.variant-btn:focus{
+    border-color: var(--primary-color);
+}
+
+.wishlist-icon{
+    width: 25px;
+}
+
+.wishlist-btn{
+    border-color: transparent;
+    border: 1px solid gainsboro;
+    color: white !important;
+}
+.wishlist-btn:hover{
+    border-color: var(--primary-color);
+    color: white !important;
+}
+
+.bag-icon{
+    width: 27px;
+}
+
+.bag-btn{
+    background-color: var(--primary-color);
+}
+.bag-btn:hover{
+    background-color: #ba520a;
+}
+
+.product-featurette, .trust-bar{
+    background-color: #f6eee8;
+}
+
+.pf{
+    width: 35%;
+}
+
+.trust-icon{
+    width: 50px;
+}
+
